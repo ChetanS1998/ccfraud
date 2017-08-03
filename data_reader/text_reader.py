@@ -3,10 +3,10 @@
 from numpy import genfromtxt
 
 
-def to_np_array(file_path):
+def read_to_numpy_array(file_path):
     '''
     Reads a file and transforms it into a numpy array.
     :param file_path: The path of the file
     :return: A numpy array
     '''
-    return genfromtxt(file_path)
+    return genfromtxt(file_path, delimiter=',')
